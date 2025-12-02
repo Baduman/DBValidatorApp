@@ -1,0 +1,79 @@
+<section class="detailed-results-container">
+  <div class="results-summary">
+    <div class="summary-card success">
+      <div class="summary-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+      </div>
+      <div class="summary-content">
+        <div class="summary-value" id="total-passed">0</div>
+        <div class="summary-label">Passed</div>
+      </div>
+    </div>
+
+    <div class="summary-card warning">
+      <div class="summary-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 9v4"></path>
+          <path d="M12 17h.01"></path>
+          <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+        </svg>
+      </div>
+      <div class="summary-content">
+        <div class="summary-value" id="total-warnings">0</div>
+        <div class="summary-label">Warnings</div>
+      </div>
+    </div>
+
+    <div class="summary-card error">
+      <div class="summary-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"></circle>
+          <line x1="12" y1="8" x2="12" y2="12"></line>
+          <line x1="12" y1="16" x2="12.01" y2="16"></line>
+        </svg>
+      </div>
+      <div class="summary-content">
+        <div class="summary-value" id="total-failed">0</div>
+        <div class="summary-label">Failed</div>
+      </div>
+    </div>
+
+    <div class="summary-card info">
+      <div class="summary-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 16 14"></polyline>
+        </svg>
+      </div>
+      <div class="summary-content">
+        <div class="summary-value" id="total-tests">0</div>
+        <div class="summary-label">Total Tests</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="test-info-card">
+    <div class="test-info-row">
+      <div class="test-info-item">
+        <span class="test-info-label">Database:</span>
+        <span class="test-info-value" id="test-database">-</span>
+      </div>
+      <div class="test-info-item">
+        <span class="test-info-label">Duration:</span>
+        <span class="test-info-value" id="test-duration">-</span>
+      </div>
+      <div class="test-info-item">
+        <span class="test-info-label">Date:</span>
+        <span class="test-info-value" id="test-date">-</span>
+      </div>
+      <div class="test-info-item">
+        <span class="test-info-label">Status:</span>
+        <span class="test-info-value status-badge" id="overall-status">-</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="test-details" id="test-details"></div>
+</section>

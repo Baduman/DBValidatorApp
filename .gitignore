@@ -1,0 +1,45 @@
+node_modules/
+.DS_Store
+*.log
+dist/
+build/
+*.tmp
+.env
+.env.local
+*.swp
+*.swo
+*~
+
+# Electron
+out/
+*.asar
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS
+Thumbs.db
+desktop.ini
+
+# Python (for future backend)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+
+# LaTeX
+*.aux
+*.log
+*.out
+*.toc
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+

@@ -1,0 +1,115 @@
+<section class="report-screen-container">
+  <div class="report-header-card">
+    <div class="header-content">
+      <div class="header-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
+          <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+          <path d="M10 9v6"></path>
+          <path d="M13 12H7"></path>
+        </svg>
+      </div>
+      <div>
+        <h2 class="report-title">Report Generation</h2>
+        <p class="report-subtitle">Generate LaTeX-based PDF reports with custom templates</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="report-config-card">
+    <h3 class="config-title">Report Configuration</h3>
+    <div class="config-grid">
+      <div class="config-item">
+        <label class="config-label">Template</label>
+        <select id="template-select" class="config-select">
+          <option value="default">Default Template</option>
+          <option value="detailed">Detailed Report</option>
+          <option value="summary">Summary Report</option>
+          <option value="custom">Custom Template</option>
+        </select>
+      </div>
+      <div class="config-item">
+        <label class="config-label">Report Title</label>
+        <input type="text" id="report-title" class="config-input" placeholder="Database Validation Report" value="Database Validation Report" />
+      </div>
+      <div class="config-item">
+        <label class="config-label">Author</label>
+        <input type="text" id="report-author" class="config-input" placeholder="Your Name" value="DB Validation Team" />
+      </div>
+      <div class="config-item">
+        <label class="config-label">Date Format</label>
+        <select id="date-format" class="config-select">
+          <option value="full">Full Date (January 15, 2024)</option>
+          <option value="short">Short Date (01/15/2024)</option>
+          <option value="iso">ISO Format (2024-01-15)</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div class="report-sections-card">
+    <h3 class="config-title">Report Sections</h3>
+    <div class="sections-list" id="sections-list">
+      <label class="section-checkbox">
+        <input type="checkbox" checked data-section="summary" />
+        <span>Executive Summary</span>
+      </label>
+      <label class="section-checkbox">
+        <input type="checkbox" checked data-section="test-results" />
+        <span>Test Results</span>
+      </label>
+      <label class="section-checkbox">
+        <input type="checkbox" checked data-section="schema-analysis" />
+        <span>Schema Analysis</span>
+      </label>
+      <label class="section-checkbox">
+        <input type="checkbox" checked data-section="data-analysis" />
+        <span>Data Analysis</span>
+      </label>
+      <label class="section-checkbox">
+        <input type="checkbox" checked data-section="recommendations" />
+        <span>Recommendations</span>
+      </label>
+      <label class="section-checkbox">
+        <input type="checkbox" checked data-section="appendix" />
+        <span>Appendix</span>
+      </label>
+    </div>
+  </div>
+
+  <div class="latex-preview-card">
+    <div class="preview-header">
+      <h3 class="config-title">LaTeX Preview</h3>
+      <button class="preview-btn" id="refresh-preview">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="23 4 23 10 17 10"></polyline>
+          <polyline points="1 20 1 14 7 14"></polyline>
+          <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
+        </svg>
+        Refresh
+      </button>
+    </div>
+    <div class="latex-code-wrapper">
+      <pre id="latex-preview" class="latex-code"></pre>
+    </div>
+  </div>
+
+  <div class="export-actions-card">
+    <button class="export-pdf-btn" id="export-pdf-btn">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+        <polyline points="7 10 12 15 17 10"></polyline>
+        <line x1="12" y1="15" x2="12" y2="3"></line>
+      </svg>
+      <span>Generate & Export PDF</span>
+    </button>
+    <button class="export-latex-btn" id="export-latex-btn">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+        <polyline points="17 8 12 3 7 8"></polyline>
+        <line x1="12" y1="3" x2="12" y2="15"></line>
+      </svg>
+      <span>Export LaTeX File</span>
+    </button>
+  </div>
+</section>

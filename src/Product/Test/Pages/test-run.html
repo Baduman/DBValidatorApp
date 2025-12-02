@@ -1,0 +1,66 @@
+<section class="test-run-container">
+  <div class="database-upload-section" id="database-upload-section">
+    <div class="upload-icon-wrapper">
+      <svg class="upload-icon" xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+        <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+        <path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"></path>
+      </svg>
+    </div>
+    
+    <h2 class="upload-title">Upload Database File</h2>
+    <p class="upload-subtitle">
+      Drag and drop SQLite, DB or other database files, or select from your directory.
+    </p>
+
+    <div class="upload-actions">
+      <div class="file-input-wrapper">
+        <input
+          type="file"
+          id="database-file-input"
+          class="file-input"
+          accept=".db,.sqlite,.sqlite3,.db3"
+        />
+        <label for="database-file-input" class="file-input-label" id="file-input-label">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z"></path>
+          </svg>
+          <span>Select File</span>
+        </label>
+      </div>
+    </div>
+
+    <div class="supported-formats">
+      <span>Supported formats:</span>
+      <span class="format-tag">.db</span>
+      <span class="format-tag">.sqlite</span>
+      <span class="format-tag">.sqlite3</span>
+      <span class="format-tag">.db3</span>
+    </div>
+
+    <div class="selected-file-info" id="selected-file-info">
+      <div class="file-info-row">
+        <div class="file-info-left">
+          <div class="file-name">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
+              <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+              <path d="M10 9v6"></path>
+              <path d="M13 12H7"></path>
+            </svg>
+            <span id="file-name">-</span>
+          </div>
+          <div class="file-size" id="file-size">-</div>
+        </div>
+        <button class="remove-file-btn" id="remove-file-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 6h18"></path>
+            <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"></path>
+            <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path>
+          </svg>
+          <span>Remove</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
